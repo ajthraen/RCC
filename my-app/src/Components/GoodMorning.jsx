@@ -1,10 +1,13 @@
 import React from 'react';
 
+// let timeOfDay = new Date();
+// timeOfDay.getHours();
+
 const GoodMorning = () => {
-    let timeOfDay = 'Morning'
+    let timeOfDay = 12;
     return (
         <div className='container1'>
-            <h1>Good {timeOfDay}</h1>
+            <h1>It's {timeOfDay} O'clock</h1>
         </div>
     );
 }

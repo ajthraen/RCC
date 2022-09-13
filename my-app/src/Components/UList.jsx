@@ -6,7 +6,6 @@ const UList = () => {
             <div><input type="checkbox" /> To Do #1 </div>
             <div><input type="checkbox" /> To Do #2 </div>
             <div><input type="checkbox" /> To Do #3 </div>
-            
         </div>
     );
 }
