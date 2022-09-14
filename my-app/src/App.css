@@ -61,3 +61,7 @@
 .flexBox2{
   padding: 16px;
 }
+.toDoItemStyle{
+  padding: 8px;
+  border-bottom: 2px solid gray;
+}
