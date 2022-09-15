@@ -3,6 +3,7 @@ import Nav from './Components/Nav.jsx'
 import UList from './Components/UList.jsx'
 import GoodMorning from './Components/GoodMorning.jsx'
 import ContactCard from './Components/ContactCard.jsx'
+import Jokes from './Components/Jokes.jsx'
 import Footer from './Components/Footer.jsx'
 
 
@@ -23,6 +24,17 @@ function App() {
         imgurl ="https://vetstreet.brightspotcdn.com/dims4/default/95808af/2147483647/crop/0x0%2B0%2B0/resize/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2Fe3%2Ff10e609e9011e0a2380050568d634f%2Ffile%2FBoxer-1-645mk062111.jpg" 
         phone="123-222-3333" 
         email="beefcake22@aol.com"
+      />
+      <Jokes 
+        quest1="Why did the chicken cross the road?"
+        ans1="To get to the other side"
+      />
+      <Jokes 
+        quest1="A horse walks into a bar"
+        ans1="It said ouch"
+      />
+      <Jokes 
+        ans1="Thats what she said"
       />
       <Footer />
     </div>
