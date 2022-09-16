@@ -34,6 +34,7 @@ function App() {
         ans1="It said ouch"
       />
       <Jokes 
+        quest1="A horse walks into a bar"
         ans1="Thats what she said"
       />
       <Footer />
