@@ -1,6 +1,7 @@
 import './App.css';
 import Nav from './Components/Nav.jsx'
-// import UList from './Components/UList.jsx'
+import Heading from './Components/Heading.jsx'
+import UList from './Components/UList.jsx'
 // import GoodMorning from './Components/GoodMorning.jsx'
 // import ContactCard from './Components/ContactCard.jsx'
 // import Jokes from './Components/Jokes.jsx'
@@ -11,8 +12,9 @@ function App() {
   return (
     <div>
       <Nav />
-      {/* <GoodMorning />
+      <Heading />
       <UList />
+      {/* <GoodMorning />
       <ContactCard 
         name1="Puss in Boots" 
         imgurl ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaOAS_uk1riswyplhrFwH3OyM7ltRRTYQlzA&usqp=CAU" 

@@ -2,7 +2,10 @@ import React from 'react';
 
 const ToDoItem = () => {
     return (
-        <div className='toDoItemStyle'><input type="checkbox" /> To Do #1 </div>
+        <div>
+            <h3>To do item #1</h3>
+            <button>Complete</button>
+        </div>
     );
 }
 
