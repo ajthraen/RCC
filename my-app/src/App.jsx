@@ -1,9 +1,9 @@
 import './App.css';
 import Nav from './Components/Nav.jsx'
-import UList from './Components/UList.jsx'
-import GoodMorning from './Components/GoodMorning.jsx'
-import ContactCard from './Components/ContactCard.jsx'
-import Jokes from './Components/Jokes.jsx'
+// import UList from './Components/UList.jsx'
+// import GoodMorning from './Components/GoodMorning.jsx'
+// import ContactCard from './Components/ContactCard.jsx'
+// import Jokes from './Components/Jokes.jsx'
 import Footer from './Components/Footer.jsx'
 
 
@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <Nav />
-      <GoodMorning />
+      {/* <GoodMorning />
       <UList />
       <ContactCard 
         name1="Puss in Boots" 
@@ -36,7 +36,7 @@ function App() {
       <Jokes 
         quest1="A horse walks into a bar"
         ans1="Thats what she said"
-      />
+      /> */}
       <Footer />
     </div>
   );
