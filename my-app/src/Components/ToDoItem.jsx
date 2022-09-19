@@ -1,16 +1,13 @@
 import React from 'react';
 
-function ToDoItem(props) {
-    function deleteToDo(id){
-        console.log('Delete To Do', props.title)
-    }
+function ToDoItem({title, onToDoDelete}) {
     return (
         <div>
-            <h3>{props.title}</h3>
+            <h3>{title}</h3>
             {/* <button onClick={deleteToDo}>Complete</button> */}
             {/* use the below syntax if you need to pass a value 
             dont use parenthesis if you dont need to pass a value */}
-            <button onClick={()=>deleteToDo(1)}>Complete</button>
+            <button onClick={onToDoDelete}>Complete</button>
         </div>
     );
 }

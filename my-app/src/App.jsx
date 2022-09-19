@@ -1,19 +1,55 @@
 import './App.css';
 import Nav from './Components/Nav.jsx'
+//import Counter from './Components/Counter.jsx'
 import Heading from './Components/Heading.jsx'
-import UList from './Components/UList.jsx'
+// import UList from './Components/UList.jsx'
+import Modal from './Components/Modal.jsx'
+import ToDoItem from './Components/ToDoItem.jsx'
 // import GoodMorning from './Components/GoodMorning.jsx'
 // import ContactCard from './Components/ContactCard.jsx'
 // import Jokes from './Components/Jokes.jsx'
+import React, {useState} from 'react'
 import Footer from './Components/Footer.jsx'
 
 
 function App() {
+  const [showModal, setShowModal] = useState(false)
+  
+  function onToDoDelete() {
+    setShowModal(true)
+    console.log('Delete')
+}
+
+// function deleteToDo(id){
+//     console.log('Delete To Do', props.title)
+// }
+
   return (
     <div>
       <Nav />
       <Heading />
-      <UList />
+      <div>
+        <input type="text" onChange={(event) => {
+          console.log(event.target.value)
+        }}/>
+        <button onClick={() => setShowModal(true)}>Add To Do</button>
+        <div className='container1'>
+            <ToDoItem
+                onToDoDelete={onToDoDelete} 
+                title="To Do #1"
+            />
+            <ToDoItem 
+                onToDoDelete={onToDoDelete}
+                title="To Do #2"
+            />
+            <ToDoItem 
+                onToDoDelete={onToDoDelete}
+                title="To Do #3"
+            />            
+        </div>
+      </div>
+      
+      {showModal ? <Modal title1="Are you sure?"/> : null}
       {/* <GoodMorning />
       <ContactCard 
         name1="Puss in Boots" 
