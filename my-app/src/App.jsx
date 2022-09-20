@@ -8,7 +8,7 @@ import ToDoItem from './Components/ToDoItem.jsx'
 // import GoodMorning from './Components/GoodMorning.jsx'
 // import ContactCard from './Components/ContactCard.jsx'
 // import Jokes from './Components/Jokes.jsx'
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Footer from './Components/Footer.jsx'
 
 
@@ -20,6 +20,16 @@ function App() {
     console.log('Delete')
 }
 
+function cancelModal() {
+  setShowModal(false)
+}
+function confirmModal() {
+  setShowModal(false)
+}
+
+useEffect(() => {
+  console.log('onMount')
+})
 // function deleteToDo(id){
 //     console.log('Delete To Do', props.title)
 // }
@@ -49,7 +59,7 @@ function App() {
         </div>
       </div>
       
-      {showModal ? <Modal title1="Are you sure?"/> : null}
+      {showModal ? <Modal cancelModal={cancelModal} confirmModal={confirmModal} title1="Are you sure?"/> : null}
       {/* <GoodMorning />
       <ContactCard 
         name1="Puss in Boots" 

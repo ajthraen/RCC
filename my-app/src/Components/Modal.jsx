@@ -1,7 +1,7 @@
 import React from 'react';
 import './Modal.css';
 
-function Modal(props){
+function Modal({ title1, cancelModal, confirmModal}){
     function cancel() {
         console.log("Are you sure you want to cancel?")
     }
@@ -11,12 +11,12 @@ function Modal(props){
     return(
     <>
         <div className="modal">
-            <p className="modal__title">{props.title1}</p>
+            <p className="modal__title">{title1}</p>
             <div className="modal__buttons">
-            <button className="btn btn__cancel" onClick={cancel}>
+            <button className="btn btn__cancel" onClick={cancelModal}>
                 Cancel
             </button>
-            <button className="btn" onClick={confirm}>
+            <button className="btn" onClick={confirmModal}>
                 Confirm
             </button>
             </div>
